@@ -29,3 +29,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Project Ignore Files ###
+/tmp/
+*.pid
+*.log
+*.gz
+mvnw
+mvnw.cmd
+.mvn/
+.jekyll-cache
+TODO.md
