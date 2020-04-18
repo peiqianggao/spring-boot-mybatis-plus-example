@@ -1,0 +1,95 @@
+2020-04-18 10:08:09.649  INFO 25529 --- [main] m.g.d.m.e.MybatisPlusExampleApplication  : Starting MybatisPlusExampleApplication on gaopqX.local with PID 25529 (/Users/gaopq/data/code/self/mybatis-plus-example/target/classes started by gaopq in /Users/gaopq/data/code/self/mybatis-plus-example)
+2020-04-18 10:08:09.653 DEBUG 25529 --- [main] m.g.d.m.e.MybatisPlusExampleApplication  : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-18 10:08:09.654  INFO 25529 --- [main] m.g.d.m.e.MybatisPlusExampleApplication  : No active profile set, falling back to default profiles: default
+2020-04-18 10:08:10.788  INFO 25529 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-04-18 10:08:10.797  INFO 25529 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-18 10:08:10.798  INFO 25529 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-18 10:08:10.869  INFO 25529 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-18 10:08:10.870  INFO 25529 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1180 ms
+2020-04-18 10:08:11.499  INFO 25529 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-18 10:08:11.579  INFO 25529 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-18 10:08:11.697  INFO 25529 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-18 10:08:11.710  INFO 25529 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-18 10:08:11.737  INFO 25529 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-18 10:08:11.890  INFO 25529 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2020-04-18 10:08:11.892  INFO 25529 --- [main] m.g.d.m.e.MybatisPlusExampleApplication  : Started MybatisPlusExampleApplication in 2.542 seconds (JVM running for 2.967)
+2020-04-18 10:08:14.549  INFO 25529 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-18 10:08:14.549  INFO 25529 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-18 10:08:14.555  INFO 25529 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-04-18 10:08:14.665  INFO 25529 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-18 10:08:14.874  INFO 25529 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-18 10:08:14.940 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:08:14.957 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000001(String)
+2020-04-18 10:08:14.979 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:08:14.985 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:08:14.986 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 小明(String), 13800000001(String), 兰州(String)
+2020-04-18 10:08:14.995 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:08:14.998 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:08:14.999 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000001(Integer), xxx1@xxx.com(String), 救救孩子吧 ...(String), Peter(String)
+2020-04-18 10:08:15.005 DEBUG 25529 --- [http-nio-8088-exec-1] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:08:46.608 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:08:46.609 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000002(String)
+2020-04-18 10:08:46.611 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:08:46.613 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:08:46.613 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 小红(String), 13800000002(String), 兰州(String)
+2020-04-18 10:08:46.618 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:08:46.620 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:08:46.621 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000002(Integer), xxx2@xxx.com(String), 又是开心的一天 ...(String), Amy(String)
+2020-04-18 10:08:46.625 DEBUG 25529 --- [http-nio-8088-exec-2] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:09:10.981 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:09:10.981 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000003(String)
+2020-04-18 10:09:10.983 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:09:10.985 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:09:10.986 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 大东(String), 13800000003(String), 郴州(String)
+2020-04-18 10:09:10.990 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:09:10.991 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:09:10.992 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000003(Integer), xxx3@xxx.com(String),  ...(String), Amy(String)
+2020-04-18 10:09:10.996 DEBUG 25529 --- [http-nio-8088-exec-3] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:09:48.610 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:09:48.610 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000004(String)
+2020-04-18 10:09:48.612 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:09:48.613 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:09:48.613 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 黄三(String), 13800000004(String), 郴州(String)
+2020-04-18 10:09:48.617 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:09:48.619 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:09:48.620 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000004(Integer), xxx4@xxx.com(String),  ...(String), King(String)
+2020-04-18 10:09:48.625 DEBUG 25529 --- [http-nio-8088-exec-4] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:10:18.680 DEBUG 25529 --- [http-nio-8088-exec-5] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:10:18.680 DEBUG 25529 --- [http-nio-8088-exec-5] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000004(String)
+2020-04-18 10:10:18.684 DEBUG 25529 --- [http-nio-8088-exec-5] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 1
+2020-04-18 10:10:39.472 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:10:39.472 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000005(String)
+2020-04-18 10:10:39.474 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:10:39.475 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:10:39.475 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 虞姬(String), 13800000005(String), 滨州(String)
+2020-04-18 10:10:39.479 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:10:39.482 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:10:39.483 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000005(Integer), xxx5@xxx.com(String),  ...(String), Kerr(String)
+2020-04-18 10:10:39.487 DEBUG 25529 --- [http-nio-8088-exec-6] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:11:11.910 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user WHERE (phone = ?) 
+2020-04-18 10:11:11.910 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.selectOne    : ==> Parameters: 13800000006(String)
+2020-04-18 10:11:11.913 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.selectOne    : <==      Total: 0
+2020-04-18 10:11:11.914 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO user ( `name`, phone, city ) VALUES ( ?, ?, ? ) 
+2020-04-18 10:11:11.914 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.insert       : ==> Parameters: 项羽(String), 13800000006(String), 白湖(String)
+2020-04-18 10:11:11.918 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.mapper.UserMapper.insert       : <==    Updates: 1
+2020-04-18 10:11:11.920 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.m.UserExtensionMapper.insert   : ==>  Preparing: INSERT INTO user_extension ( id, `email`, introduction, `eng_name` ) VALUES ( ?, ?, ?, ? ) 
+2020-04-18 10:11:11.921 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.m.UserExtensionMapper.insert   : ==> Parameters: 1000006(Integer), xxx6@xxx.com(String), 我是霸王 ...(String), Uki(String)
+2020-04-18 10:11:11.925 DEBUG 25529 --- [http-nio-8088-exec-7] m.g.d.m.e.m.UserExtensionMapper.insert   : <==    Updates: 1
+2020-04-18 10:11:24.898 DEBUG 25529 --- [http-nio-8088-exec-8] m.g.d.m.e.mapper.UserMapper.selectPage   : ==>  Preparing: SELECT COUNT(1) FROM user 
+2020-04-18 10:11:24.899 DEBUG 25529 --- [http-nio-8088-exec-8] m.g.d.m.e.mapper.UserMapper.selectPage   : ==> Parameters: 
+2020-04-18 10:11:24.912 DEBUG 25529 --- [http-nio-8088-exec-8] m.g.d.m.e.mapper.UserMapper.selectPage   : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user LIMIT ?,? 
+2020-04-18 10:11:24.912 DEBUG 25529 --- [http-nio-8088-exec-8] m.g.d.m.e.mapper.UserMapper.selectPage   : ==> Parameters: 0(Long), 5(Long)
+2020-04-18 10:11:24.916 DEBUG 25529 --- [http-nio-8088-exec-8] m.g.d.m.e.mapper.UserMapper.selectPage   : <==      Total: 5
+2020-04-18 10:12:12.458 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.mapper.UserMapper.selectPage   : ==>  Preparing: SELECT COUNT(1) FROM user 
+2020-04-18 10:12:12.458 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.mapper.UserMapper.selectPage   : ==> Parameters: 
+2020-04-18 10:12:12.462 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.mapper.UserMapper.selectPage   : ==>  Preparing: SELECT id,`name`,phone,city,created,updated FROM user LIMIT ?,? 
+2020-04-18 10:12:12.462 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.mapper.UserMapper.selectPage   : ==> Parameters: 0(Long), 5(Long)
+2020-04-18 10:12:12.466 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.mapper.UserMapper.selectPage   : <==      Total: 5
+2020-04-18 10:12:12.473 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.m.U.pageUserDetailInfo         : ==>  Preparing: SELECT COUNT(1) FROM user u 
+2020-04-18 10:12:12.473 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.m.U.pageUserDetailInfo         : ==> Parameters: 
+2020-04-18 10:12:12.477 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.m.U.pageUserDetailInfo         : ==>  Preparing: select u.id, u.name, u.city, u.phone, ue.email, ue.introduction, ue.eng_name as engName from user u left join user_extension ue on u.id = ue.id order by u.id asc LIMIT ?,? 
+2020-04-18 10:12:12.477 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.m.U.pageUserDetailInfo         : ==> Parameters: 0(Long), 5(Long)
+2020-04-18 10:12:12.481 DEBUG 25529 --- [http-nio-8088-exec-9] m.g.d.m.e.m.U.pageUserDetailInfo         : <==      Total: 5
+2020-04-18 10:14:06.366  INFO 25529 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-18 10:14:06.367  INFO 25529 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-18 10:14:06.373  INFO 25529 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

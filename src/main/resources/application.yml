@@ -1,0 +1,41 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: mybatis-plus-example-server
+  pid:
+    file: ${spring.application.name}.pid
+  jackson:
+    default-property-inclusion: non_null
+  servlet:
+    multipart:
+      max-file-size: 80MB
+      max-request-size: 80MB
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_plus_example?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: test
+    password: xxx_xxx2020
+    hikari:
+      connection-timeout: 30000
+      minimum-idle: 10
+      connection-test-query: SELECT 1
+      maximum-pool-size: 50
+      auto-commit: true
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  typeAliasesPackage: me.gaopq.demo.mbp.example.entity
+logging:
+  level:
+    me.gaopq.demo.mbp.example: debug
+  file:
+    name: ${spring.application.name}.log
+swagger:
+  enabled: true
+  version: 1.1.0
+  title: 系统接口文档
+  base-package: me.gaopq.demo.mbp.example.controller
+  exclude-path: /ops/**, /error
+  base-path: /**
+  description: 接口文档描述 xxx
