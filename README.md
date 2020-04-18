@@ -1,8 +1,8 @@
 # SpringBoot集成mybatis-plus
 
 #### 代码仓库
-- [Github](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html)
-- [Gitee](https://www.cnblogs.com/wuyuegb2312/p/11172440.html)
+- [Github](https://github.com/peiqianggao/spring-boot-mybatis-plus-example)
+- [Gitee](https://gitee.com/gaopq/springboot-mybatis-plus-example)
 
 #### 项目结构
 ![](https://i.loli.net/2020/04/18/4sLMAdnGwSHCjDx.png)
